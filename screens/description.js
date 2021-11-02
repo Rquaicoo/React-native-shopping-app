@@ -26,7 +26,7 @@ function description({naviage}) {
 
           <TouchableOpacity style={{backgroundColor: "#000000", marginTop: 30, paddingTop: 10, paddingBottom: 10, paddingLeft: 80, paddingRight: 80, borderRadius: 30}}
       onPress={() => navigation.navigate('homepage')}>
-        <Text style={{fontWeight: "bold", fontSize: 20, color: "#ffffff", marginLeft: 30}}>Add to cart</Text>
+        <Text style={{fontWeight: "bold", fontSize: 20, color: "#ffffff", marginLeft: 30}}>Add to cart </Text>
       </TouchableOpacity>
       </View>
     

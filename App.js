@@ -4,10 +4,12 @@ import { StyleSheet, Text, View, TouchableOpacity, Image, TextInput} from 'react
 import {NavigationContainer} from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+
 import login from "./screens/login"
 import welcome from "./screens/welcome"
 import signUp from "./screens/signup"
 import homepage from './screens/homepage';
+import description from './screens/description';
 
 
 const Stack = createNativeStackNavigator();
@@ -24,6 +26,7 @@ function App() {
         <Stack.Screen name="signUp" component={signUp} options={{title: "Sign Up"}} />
         <Stack.Screen name="logIn" component={login} options={{title: "Login"}} />
         <Stack.Screen name="homepage" component={homepage} options={{title: "homepage"}} />
+        <Stack.Screen name="description" component={description} />
       </Stack.Navigator>
     </NavigationContainer>
   );

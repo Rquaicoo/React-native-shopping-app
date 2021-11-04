@@ -1,35 +1,28 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image, ScrollView} from 'react-native';
 import { Feather, FontAwesome5, MaterialCommunityIcons } from '@expo/vector-icons'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
 import { Searchbar } from 'react-native-paper';
 
-const MyComponent = () => {
-  const [searchQuery, setSearchQuery] = React.useState('');
 
-  const onChangeSearch = query => setSearchQuery(query);
-
-  return (
-    <Searchbar
-      placeholder="Search"
-      onChangeText={onChangeSearch}
-      value={searchQuery}
-    />
-  );
-};
 
 
 
 export default function homepage({navigation}) {
+  const [searchQuery, setSearchQuery] = React.useState('');
+
+  const onChangeSearch = query => setSearchQuery(query);
     return (
       
     <View style={styles.container}>
-
-        <View style={{marginLeft: 20, marginTop: 20}}>
-            <Text style={{fontSize: 20, fontWeight: "bold"}}>Hello Russy</Text>
-            <Text style={{fontSize: 15, fontWeight: "100", color: "gray"}}>Let's get somethings?</Text>
-        </View>
+      <Searchbar
+      placeholder="Search"
+      onChangeText={onChangeSearch}
+      value={searchQuery}
+      style={{borderRadius: 20, width: 350, marginLeft: 20}}
+    />
+        <ScrollView>
 
             <View style={{marginTop: 20, backgroundColor: "#2e2d2d", width: 300, height: 150, paddingBottom: 20, paddingTop: 30,paddingLeft: 20, paddingRight: 80, borderRadius: 20, marginLeft: 20}}>
             
@@ -57,7 +50,7 @@ export default function homepage({navigation}) {
   
         
         <View style={{flexDirection: "row", marginLeft: 15, marginTop: 40}}>
-        <TouchableOpacity style={{borderRadius: 30, backgroundColor: "#ffffff", padding: 7}}>
+        <TouchableOpacity style={{borderRadius: 30, backgroundColor: "#ebebeb", padding: 7}}>
             <Image
         style={{
           borderRadius: 20,
@@ -69,7 +62,7 @@ export default function homepage({navigation}) {
        />
         </TouchableOpacity>
         
-        <TouchableOpacity style={{marginLeft: 30, borderRadius: 30, padding: 7, backgroundColor: "#f0eeeb"}}>
+        <TouchableOpacity style={{marginLeft: 30, borderRadius: 30, padding: 7, backgroundColor: "#ebebeb"}}>
         <Image
         style={{
           borderRadius: 20,
@@ -81,7 +74,7 @@ export default function homepage({navigation}) {
        />
         </TouchableOpacity>
 
-        <TouchableOpacity style={{marginLeft: 30, borderRadius: 30, padding: 7, backgroundColor: "#f0eeeb"}}>
+        <TouchableOpacity style={{marginLeft: 30, borderRadius: 30, padding: 7, backgroundColor: "#ebebeb"}}>
         <Image
         style={{
           borderRadius: 20,
@@ -93,7 +86,7 @@ export default function homepage({navigation}) {
        />
         </TouchableOpacity>
 
-        <TouchableOpacity style={{marginLeft: 30, borderRadius: 30, padding: 7, backgroundColor: "#f0eeeb"}}>
+        <TouchableOpacity style={{marginLeft: 30, borderRadius: 30, padding: 7, backgroundColor: "#ebebeb"}}>
         <Image
         style={{
           borderRadius: 20,
@@ -109,7 +102,7 @@ export default function homepage({navigation}) {
           <Text style={{marginLeft: 30, fontWeight: "bold", marginTop: 20}}>Selected for you</Text>
         <View style={{flexDirection: "row"}}>
         <TouchableOpacity style={{borderRadius: 30, marginLeft: 20, marginTop: 20, borderColor: "#f0eeeb"}}>
-                <TouchableOpacity style={{backgroundColor: "#f0eeeb",  borderRadius: 20,}}>
+                <TouchableOpacity style={{backgroundColor: "#ebebeb",  borderRadius: 20,}}>
                       <Image
                   style={{
                     borderRadius: 20,
@@ -117,7 +110,7 @@ export default function homepage({navigation}) {
                     height: 150,
                     resizeMode: 'contain',
                   }}
-                    source={require('../assets/1-removebg.png')}
+                    source={require('../assets/airjordans_on_Twitter-removebg-preview.png')}
                 />
 
                 <Image
@@ -140,7 +133,7 @@ export default function homepage({navigation}) {
 
             <TouchableOpacity style={{borderRadius: 30, marginLeft: 50, marginTop: 40, borderColor: "#f0eeeb"}}
             onPress={() => navigation.navigate('description')}>
-                <TouchableOpacity style={{backgroundColor: "#f0eeeb",  borderRadius: 20,}}>
+                <TouchableOpacity style={{backgroundColor: "#ebebeb",  borderRadius: 20,}}>
                       <Image
                   style={{
                     borderRadius: 20,
@@ -148,7 +141,7 @@ export default function homepage({navigation}) {
                     height: 150,
                     resizeMode: 'contain',
                   }}
-                    source={require('../assets/1-removebg.png')}
+                    source={require('../assets/2-removebg-preview.png')}
                 />
 
                 <Image
@@ -174,7 +167,7 @@ export default function homepage({navigation}) {
                   </View>
             </TouchableOpacity>
     </View>
-            
+      </ScrollView>
     </View>
     );
 }

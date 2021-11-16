@@ -14,7 +14,7 @@ function description({navigation}) {
           <Image
                   style={{
                       height: 300,
-                      width: 300,
+                      width: "85%",
                       resizeMode: 'contain',
                       paddingBottom: 1,
                       marginLeft: 40,
@@ -34,27 +34,27 @@ function description({navigation}) {
 
 
 
-          <View style={{marginTop: 30, marginLeft: 20}}>
+          <View style={{marginTop: 50, marginLeft: 20}}>
             <Text style={{fontWeight: "bold", fontSize: 20, }}>Nike Pergasus</Text>
             
-            <View style={{flexDirection: "row", marginTop: 5}}>
+            <View style={{flexDirection: "row", marginTop: 20}}>
               <AntDesign name="star" size={24} color="gold" />
               <AntDesign name="star" size={24} color="gold" />
               <AntDesign name="star" size={24} color="gold" />
               <AntDesign name="star" size={24} color="gold" />
 
-              <Text style={{fontWeight: "bold", marginLeft: 20}}>(4500 reviews)</Text>
+              <Text style={{fontWeight: "bold", marginLeft: "45%"}}>(4500 reviews)</Text>
             </View>
 
-            <Text style={{fontWeight: "bold", fontSize: 20, marginTop: 10}}>$140.00</Text>
+            <Text style={{fontWeight: "bold", fontSize: 20, marginTop: 20}}>$140.00</Text>
             <Text>Available in stock</Text>
 
-            <Text style={{fontWeight: "bold", fontSize: 15, marginTop: 10}}>About</Text>
-            <Text style={{fontSize: 12, marginTop: 5}}>Fast Shipping. An Icon On The Streets, The Air Force 1 Is Among The Most Popular Designs Of All Time. 
+            <Text style={{fontWeight: "bold", fontSize: 15, marginTop:25}}>About</Text>
+            <Text style={{fontSize: 15, marginTop: 5}}>Fast Shipping. An Icon On The Streets, The Air Force 1 Is Among The Most Popular Designs Of All Time. 
               New Sneakers. Air Jordans. Shop All Yeezy 350 Styles. 
               Rare and Exclusive. In Stock, Ready To Ship. Jordans.</Text>
 
-              <View style={{flexDirection: "row", marginTop: 5}}>
+              <View style={{flexDirection: "row", marginTop: 20}}>
                 <TouchableOpacity 
                 style={{borderColor: "gray", 
                 borderRadius: 10,
@@ -92,8 +92,8 @@ function description({navigation}) {
               </View>
           </View>
           
-          <TouchableOpacity style={{backgroundColor: "#000000", marginTop: 30, paddingTop: 10, paddingBottom: 10, paddingLeft: 0,
-           paddingRight: 40, borderRadius: 30, width: 190, marginLeft: 90}}
+          <TouchableOpacity style={{backgroundColor: "#000000", marginTop: 20, paddingTop: 20, paddingBottom: 20, paddingLeft: 0,
+           paddingRight: 40, borderRadius: 30, width: 190, marginLeft: "25%"}}
       onPress={() => navigation.navigate('cart')}>
         <Text style={{fontWeight: "bold", fontSize: 20, color: "#ffffff", marginLeft: 30, paddingLeft: 20}}>Add to cart </Text>
        

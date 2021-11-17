@@ -160,7 +160,7 @@ export default function homepage({navigation}) {
                     height: 150,
                     resizeMode: 'contain',
                   }}
-                    source={require('../assets/2-removebg-preview.png')}
+                    source={require('../assets/airjordans_on_Twitter-removebg-preview.png')}
                 />
 
                 <Image
@@ -199,7 +199,7 @@ export default function homepage({navigation}) {
                     height: 150,
                     resizeMode: 'contain',
                   }}
-                    source={require('../assets/2-removebg-preview.png')}
+                    source={require('../assets/Originals_EQT_adidas_Brasil-removebg-preview.png')}
                 />
 
                 <Image
@@ -210,13 +210,13 @@ export default function homepage({navigation}) {
                     resizeMode: 'contain',
                     marginLeft: 100
                   }}
-                    source={require('../assets/nike.png')}
+                    source={require('../assets/adidas.png')}
                 />
                 </TouchableOpacity>
                 <View style={{flexDirection: "row"}}>
                   <View style={{marginLeft: 10, }}>
                       <Text style={{fontWeight: "bold", fontSize: 17}}>$140</Text> 
-                      <Text style={{fontWeight: "bold"}}>Nike Pergasus</Text>
+                      <Text style={{fontWeight: "bold"}}>Adidas sneaker</Text>
                       
                   </View>
                   <View style={{marginLeft: 20, marginTop: 7}}>
@@ -235,7 +235,7 @@ export default function homepage({navigation}) {
                     height: 150,
                     resizeMode: 'contain',
                   }}
-                    source={require('../assets/2-removebg-preview.png')}
+                    source={require('../assets/Where_To_Buy_Daniel_Arsham_adidas_Futurecraft_4D_SneakerNews_com-removebg-preview.png')}
                 />
 
                 <Image
@@ -246,13 +246,13 @@ export default function homepage({navigation}) {
                     resizeMode: 'contain',
                     marginLeft: 100
                   }}
-                    source={require('../assets/nike.png')}
+                    source={require('../assets/adidas.png')}
                 />
                 </TouchableOpacity>
                 <View style={{flexDirection: "row"}}>
                   <View style={{marginLeft: 10, }}>
                       <Text style={{fontWeight: "bold", fontSize: 17}}>$140</Text> 
-                      <Text style={{fontWeight: "bold"}}>Nike Pergasus</Text>
+                      <Text style={{fontWeight: "bold"}}>Adidas sneaker</Text>
                       
                   </View>
                   <View style={{marginLeft: 20, marginTop: 7}}>
@@ -261,7 +261,7 @@ export default function homepage({navigation}) {
                   </View>
             </TouchableOpacity>
     </View >
-        <TouchableOpacity style={{marginBottom:200, backgroundColor: "#000000", width: "10%", padding: 6, marginLeft:"85%", borderRadius: 20}}
+        <TouchableOpacity style={{marginBottom:200, backgroundColor: "#000000", width: "10%", padding: 6, marginLeft:"85%", borderRadius: 20, marginTop: -150, position: "relative"}}
          onPress={() => navigation.navigate('cart')}>
         <AntDesign name="shoppingcart" size={24} color="white" />
           </TouchableOpacity>

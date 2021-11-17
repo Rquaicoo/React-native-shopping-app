@@ -6,7 +6,7 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { Searchbar } from 'react-native-paper';
 
 
-function description({navigation}) {
+function description4({navigation}) {
   return (
       <View style={{backgroundColor: "#ffffff"}}>
         <ScrollView>
@@ -21,7 +21,7 @@ function description({navigation}) {
                      
                   }}
                   
-                  source={require('../assets/2-removebg-preview.png')}
+                  source={require('../assets/Where_To_Buy_Daniel_Arsham_adidas_Futurecraft_4D_SneakerNews_com-removebg-preview.png')}
                   />
                   <View style={{flexDirection: 'row', marginBottom: 10}}>
                   <View style={{backgroundColor: "orange", height: 10, width:10, borderRadius:30, marginLeft: 180}}>

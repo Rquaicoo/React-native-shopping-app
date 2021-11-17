@@ -12,6 +12,9 @@ import homepage from './screens/homepage';
 import description from './screens/description';
 import cart from './screens/cart';
 import checkout from './screens/checkout';
+import description2 from './screens/description2';
+import description3 from './screens/description3';
+import description4 from './screens/description4';
 
 const Stack = createNativeStackNavigator();
 function App() {

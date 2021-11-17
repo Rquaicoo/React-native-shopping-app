@@ -1,11 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Image, Switch, ScrollView} from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image, Switch, ScrollView, Alert} from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import {NavigationContainer} from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
+const showAlert = () =>
+  Alert.alert(
+    "Payment submitted",
+    "You will recieve your order soon",
+    [
+      {
+        text: "Close",
+        onPress: () => Alert.alert("Thanks for shopping"),
+        style: "cancel",
+      },
+    ],
+    {
+      cancelable: true,
+      onDismiss: () =>
+        Alert.alert(
+          "Thanks for shopping"
+        ),
+    }
+  );
 
 
 export default function checkout({navigation}){
@@ -97,8 +115,8 @@ const toggleSwitch = () => setIsEnabled(previousState => !previousState);
         value={isEnabled}/></View>
         </View>
 
-        <TouchableOpacity style={{backgroundColor: "#000000", marginTop: 30, paddingTop: 10, paddingBottom: 10, paddingLeft: 0,
-           paddingRight: 40, borderRadius: 30, width: 190, marginLeft: 90}}>
+        <TouchableOpacity style={{backgroundColor: "#000000", marginTop: 30, paddingTop: 10, paddingBottom: 10, paddingLeft: 60,
+           paddingRight: 40, borderRadius: 30, width: 300, marginLeft: 50}}  onPress={showAlert}>
         <Text style={{fontWeight: "bold", fontSize: 20, color: "#ffffff", marginLeft: 30, paddingLeft: 20}}>Pay Now </Text>
        
       </TouchableOpacity>

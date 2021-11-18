@@ -27,7 +27,10 @@ function App() {
         <Stack.Screen name="signUp" component={signUp} options={{title: "Sign Up"}} />
         <Stack.Screen name="logIn" component={login} options={{title: "Login"}} />
         <Stack.Screen name="homepage" component={homepage} options={{headerShown: false}}/>
-        <Stack.Screen name="description" component={description} />
+        <Stack.Screen name="description" component={description} options={{title: "Description"}}/>
+        <Stack.Screen name="description2" component={description2} options={{title: "Description"}}/>
+        <Stack.Screen name="description3" component={description3} options={{title: "Description"}}/>
+        <Stack.Screen name="description4" component={description4} options={{title: "Description"}}/>
         <Stack.Screen name="cart" component={cart} />
         <Stack.Screen name="checkout" component={checkout}  options={{title: "Payment Details"}}/>
       </Stack.Navigator>

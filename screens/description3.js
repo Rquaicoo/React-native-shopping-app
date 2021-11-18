@@ -35,7 +35,7 @@ function description3({navigation}) {
 
 
           <View style={{marginTop: 50, marginLeft: 20}}>
-            <Text style={{fontWeight: "bold", fontSize: 20, }}>Nike Pergasus</Text>
+            <Text style={{fontWeight: "bold", fontSize: 20, }}>Adidas Sneaker</Text>
             
             <View style={{flexDirection: "row", marginTop: 20}}>
               <AntDesign name="star" size={24} color="gold" />
@@ -119,4 +119,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default description;
+export default description3;

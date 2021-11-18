@@ -151,7 +151,7 @@ export default function homepage({navigation}) {
             </TouchableOpacity>
 
             <TouchableOpacity style={{borderRadius: 30, marginLeft: "15%", marginTop: 40, borderColor: "#f0eeeb"}}
-            onPress={() => navigation.navigate('description')}>
+            onPress={() => navigation.navigate('description2')}>
                 <TouchableOpacity style={{backgroundColor: "#ebebeb",  borderRadius: 20,}}>
                       <Image
                   style={{
@@ -190,7 +190,7 @@ export default function homepage({navigation}) {
 
     <View style={{flexDirection: "row"}}>
         <TouchableOpacity style={{borderRadius: 30, marginLeft: 25, marginTop: 20, borderColor: "#f0eeeb"}}
-            onPress={() => navigation.navigate('description')}>
+            onPress={() => navigation.navigate('description3')}>
                 <TouchableOpacity style={{backgroundColor: "#ebebeb",  borderRadius: 20,}}>
                       <Image
                   style={{
@@ -226,7 +226,7 @@ export default function homepage({navigation}) {
             </TouchableOpacity>
 
             <TouchableOpacity style={{borderRadius: 30, marginLeft: "15%", marginTop: 40, borderColor: "#f0eeeb"}}
-            onPress={() => navigation.navigate('description')}>
+            onPress={() => navigation.navigate('description4')}>
                 <TouchableOpacity style={{backgroundColor: "#ebebeb",  borderRadius: 20,}}>
                       <Image
                   style={{

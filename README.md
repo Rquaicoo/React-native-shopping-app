@@ -2,6 +2,8 @@
 A shopping application developed with react native
 
 Languages and libraries
-```React Native
+```
+React Native
 Java Script
-Expo```
+Expo
+```

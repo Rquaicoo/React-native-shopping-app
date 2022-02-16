@@ -16,7 +16,7 @@ iin your terminal
 
 ## Installing the project dependencies
 ```
-npm intall
+npm install
 ```
 ## Running the project 
 Run this comand in your terminal
